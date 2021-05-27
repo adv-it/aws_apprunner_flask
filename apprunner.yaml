@@ -1,0 +1,13 @@
+version: 1.0
+runtime: python3 
+build:
+  commands:
+    build:        
+      - pip install -r requirements.txt
+run:
+  command: python application.py
+  env:
+   - name : NAME_FIRST
+     value: "Denis"
+   - name : NAME_LAST
+     value: "Astahov"
